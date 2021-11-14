@@ -3,13 +3,13 @@ const {ipcRenderer} = require("electron");
 //test
 window.addEventListener("keyup", function(evt){
 	if(evt.keyCode == 123){
-		if(main.debug){
-			ipcRenderer.send("debug", "closeDevTool");
-			main.debug = false;
-		}else{
-			ipcRenderer.send("debug", "openDevTool");
-			main.debug = true;
-		}
+		// if(main.debug){
+		// 	ipcRenderer.send("debug", "closeDevTool");
+		// 	main.debug = false;
+		// }else{
+		// 	ipcRenderer.send("debug", "openDevTool");
+		// 	main.debug = true;
+		// }
 	}else if(evt.keyCode == 116){
 		ipcRenderer.send("debug", "refresh");
 	}
@@ -192,6 +192,7 @@ class Plugs{
 			},
 			refreshStyle: (style) => {
 				ipcRenderer.send("setting", "changeStyle=" + style);
+				document.querySelector("#plugCss").href = "./css/plug.css";
 			},
 			registerEditor: (name, init, keydown, getContent, setContent) => {
 				const target = document.querySelector(`#content .${name}`);
