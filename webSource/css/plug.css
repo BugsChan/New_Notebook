@@ -1,0 +1,36 @@
+
+		main{
+			display:grid;
+			grid-template-rows: auto 16pt;
+			font-size: 15pt;
+			font-family: "华文中宋";
+		}
+		#cmdBar{
+			font-size: 15pt;
+			height: 16pt;
+			line-height: 16pt;
+			font-family: "consolas";
+			color: #000;
+			background-color: #fafafa;
+		}
+		.alert{
+			color: #f88 !important;
+			background-color: #ff8 !important;
+		}
+		.content{
+			color: #000;
+			background-color: #fafafa;
+		}
+		#nodes{
+			border-right: solid 3px #000;
+		}
+		#nodes li{
+			font-size: 13pt;
+			height: 19.5pt;
+			line-height: 19.5pt;
+		}
+		.checked{
+			height: 22.5pt !important;
+			line-height: 22.5pt !important;
+		}
+	

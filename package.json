@@ -1,0 +1,26 @@
+{
+  "name": "notepadplus",
+  "version": "1.0.0",
+  "description": "笔记本",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+	"build": "electron-builder --win --ia32"
+  },
+  "author": "YandaChen",
+  "license": "ISC",
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "openssl": "^1.1.0"
+  },
+  "build": {
+	  "productName": "My Notepad Plus",
+	  "copyright": "copyright © 局座",
+	  "directories": {
+		  "output": "build"
+	  },
+	  "win": {
+		  "icon":"icons/icon.ico"
+	  }
+  }
+}

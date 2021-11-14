@@ -1,0 +1,49 @@
+
+{
+	"window": {
+		"width": "30%",
+		"height": "55%",
+		"x": "75%",
+		"y": "10%"
+	},
+	"dataPath": {
+		"table": "./datas/Notebook.dat",
+		"contents": "./datas/Contents"
+	},
+	"cmdbar": {
+		"height": 16,
+		"fontSize": 15,
+		"fontFamily": "consolas"
+	},
+	"main": {
+		"lineHeight": 16,
+		"fontSize": 15,
+		"fontFamily": "华文中宋"
+	},
+	"colors": {
+		"light": {
+			"foregroundColor": "#000",
+			"backgroundColor": "#fafafa",
+			"alert": {
+				"foregroundColor": "#ff8",
+				"backgroundColor": "#f88"
+			}
+		},
+		"soft": {
+			"foregroundColor": "#000",
+			"backgroundColor": "#f1f1c1",
+			"alert": {
+				"foregroundColor": "#ff8",
+				"backgroundColor": "#f88"
+			}
+		},
+		"dark": {
+			"foregroundColor": "#eee",
+			"backgroundColor": "#111",
+			"alert": {
+				"foregroundColor": "#ff8",
+				"backgroundColor": "#f88"
+			}
+		}
+	}
+}

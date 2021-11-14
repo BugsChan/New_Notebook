@@ -1,0 +1,30 @@
+#cmdBar{
+	position: fixed;
+	bottom: 2px;
+	border: none;
+	border-top: 2px solid black;
+	width: 100%;
+	overflow: hidden;
+}
+#cmdBar *{
+	height: 100%;
+	display: block;
+	border: none;
+	outline: none;
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+	background-color: inherit;
+}
+
+#cmdBar span{
+	float: left;
+}
+
+#cmdBar input{
+	width: 60%;
+	overflow: hidden;
+	line-height: inherit;
+	border-left: solid black 2px;
+	padding-left: 10pt;
+}

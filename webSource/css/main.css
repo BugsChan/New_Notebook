@@ -1,0 +1,63 @@
+#content_outer{
+	width: 100%;
+	display: grid;
+	grid-template-rows: 100%;
+}
+#content{
+	height: 100%;
+	outline: none;
+	cursor: text;
+}
+#nodes{
+	height: 100%;
+	overflow: scroll;
+}
+
+#nodes::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 1px;
+}
+
+#nodes::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: #535353;
+}
+
+#nodes::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	border-radius: 6px;
+	background: #EDEDED;
+}
+
+
+@media only screen and (min-width: 300px) {
+	#nodes li{
+		background-color: rgba(0, 0, 0, 0.1);
+		margin: 0px 2px 3px 2px;
+		padding-left: 3px;
+		border-radius: 4pt;
+		width: auto;
+		cursor: pointer;
+		overflow: hidden;
+		box-shadow: 1px 1px 1px #888;
+	}
+	#nodes li:hover{
+		background-color: rgba(200, 100, 100, 0.5);
+	}
+	.checked{
+		margin: 0px !important;
+		padding: 0px;
+		border-radius: 0px;
+		background-color: rgba(0, 150, 200, 0.2) !important;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#nodes{
+		display: none;
+	}
+	#content_outer{
+		grid-template-columns: 100% !important;
+	}
+}
