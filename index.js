@@ -33,4 +33,7 @@ app.whenReady().then( () => {
 	
 	//init ipc
 	initIpc(win);
+	app.on("window-all-closed", () => {
+		app.quit();
+	});
 });

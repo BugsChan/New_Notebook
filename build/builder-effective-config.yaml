@@ -1,9 +1,0 @@
-directories:
-  output: build
-  buildResources: build
-productName: My Notepad Plus
-copyright: copyright © 局座
-win:
-  icon: icons/icon.ico
-files: []
-electronVersion: 15.0.0

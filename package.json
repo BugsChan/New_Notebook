@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-	"build": "electron-builder --win --ia32"
+    "dist": "electron-builder"
   },
   "author": "YandaChen",
   "license": "ISC",
@@ -14,13 +14,25 @@
     "openssl": "^1.1.0"
   },
   "build": {
-	  "productName": "My Notepad Plus",
-	  "copyright": "copyright © 局座",
-	  "directories": {
-		  "output": "build"
-	  },
-	  "win": {
-		  "icon":"icons/icon.ico"
-	  }
+    "productName": "My Notepad Plus",
+    "copyright": "copyright © 局座",
+    "appId": "org.bugs.app",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "icon": "icons/icon.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^22.13.1",
+    "electron-packager": "^15.4.0"
+  },
+  "electronDownload": {
+	   "mirror": "https://npm.taobao.org/mirrors/electron/"
   }
 }

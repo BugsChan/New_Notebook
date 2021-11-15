@@ -10,19 +10,19 @@
 			height: 16pt;
 			line-height: 16pt;
 			font-family: "consolas";
-			color: #eee;
-			background-color: #111;
+			color: #000;
+			background-color: #fafafa;
 		}
 		.alert{
 			color: #f88 !important;
 			background-color: #ff8 !important;
 		}
 		.content{
-			color: #eee;
-			background-color: #111;
+			color: #000;
+			background-color: #fafafa;
 		}
 		#nodes{
-			border-right: solid 3px #eee;
+			border-right: solid 3px #000;
 		}
 		#nodes li{
 			font-size: 13pt;
