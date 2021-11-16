@@ -6,7 +6,7 @@ const {nativeTheme} = require("electron");
 const StyleInit = () => {
 	const aimPath = "./webSource/css/plug.css";
 	const settingSrc = "./datas/settings.dat";
-	const settings = JSON.parse(fs.readFileSync(settingSrc, "utf-8"));
+	let settings = JSON.parse(fs.readFileSync(settingSrc, "utf-8"));
 	let conf = new Config().getConf();
 	let cmdBarConf = conf["cmdbar"];
 	let colors = conf["colors"];
