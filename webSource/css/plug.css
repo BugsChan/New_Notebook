@@ -11,7 +11,7 @@
 			line-height: 16pt;
 			font-family: "consolas";
 			color: #000;
-			background-color: #fafafa;
+			background-color: #f1f1c1;
 		}
 		.alert{
 			color: #f88 !important;
@@ -19,7 +19,7 @@
 		}
 		.content{
 			color: #000;
-			background-color: #fafafa;
+			background-color: #f1f1c1;
 		}
 		#nodes{
 			border-right: solid 3px #000;

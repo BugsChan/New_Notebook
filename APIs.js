@@ -1,6 +1,6 @@
 
 const {ipcMain, app} = require("electron");
-const {ChangeStyle} = require("./StyleInit.js");
+const {ChangeStyle} = require("./links/StyleInit.js");
 const Config = require("./Config.js");
 const fs = require("fs");
 const {DataManager, toggleId} = require("./DataManager.js");
