@@ -3,7 +3,7 @@ const {BrowserWindow, app} = require("electron");
 const Config = require("./Config.js");
 const {initIpc} = require("./APIs.js");
 const {initPlugs} = require("./PlugInit.js");
-const {StyleInit} = require("./links/StyleInit.js");
+const {StyleInit} = require("./StyleInit.js");
 
 app.whenReady().then( () => {
 	//init plugs

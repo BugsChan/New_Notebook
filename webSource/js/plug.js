@@ -490,7 +490,6 @@ class Grep{
 				this._grepNodes("#0bb");
 				break;
 		}
-		return true;
 	}
 	
 }

@@ -191,7 +191,6 @@ class Plugs{
 				ipcRenderer.send("debug", "refresh");
 			},
 			refreshStyle: (style) => {
-				// console.log(style);
 				ipcRenderer.send("setting", "changeStyle=" + style);
 				document.querySelector("#plugCss").href = "./css/plug.css";
 			},
